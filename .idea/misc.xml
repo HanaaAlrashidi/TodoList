@@ -3,13 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/drawable/edit.xml" value="0.15925925925925927" />
         <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/layout/activity_main.xml" value="0.20606884057971014" />
         <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/layout/fragment_add__item_.xml" value="0.20606884057971014" />
         <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/layout/fragment_item__details_.xml" value="0.20606884057971014" />
         <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/layout/fragment_todo_list_.xml" value="0.20606884057971014" />
-        <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/layout/item_layout.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/7ala alhdyan/AndroidStudioProjects/TodoList/app/src/main/res/layout/item_layout.xml" value="0.22" />
       </map>
     </option>
   </component>

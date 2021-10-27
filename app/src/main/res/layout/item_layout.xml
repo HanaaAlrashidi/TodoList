@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:layout_margin="20dp">
+    android:layout_margin="20dp"
+    android:gravity="center">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_textview"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center|left" />
+
+        <TextView
+            android:id="@+id/creation_date"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ediut_button"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:padding="8dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/delete_icon"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:backgroundTint="#6C5B88"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/item_checkBox"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="54dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/ic_baseline_delete_24" />
+        android:layout_height="50dp" />
 </LinearLayout>
