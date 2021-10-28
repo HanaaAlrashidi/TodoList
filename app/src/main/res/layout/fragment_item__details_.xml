@@ -43,5 +43,13 @@
             android:background="@color/white"
             android:hint="Task Description"
             android:padding="20dp" />
+
+        <Button
+            android:id="@+id/ediut_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="EDIT"
+            android:textSize="16sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@ class TodoRepository(context: Context) {
 
     suspend fun addItem(itemModel: ItemModel) = todoDao.addItem(itemModel)
     suspend fun updateItem(itemModel: ItemModel) = todoDao.updateItem(itemModel)
-    suspend fun deleteItem(itemModel: ItemModel) = todoDao.deleteItem()
+    suspend fun deleteItem(itemModel: ItemModel) = todoDao.deleteItem(itemModel)
 
     companion object {
         private var instance: TodoRepository? = null
