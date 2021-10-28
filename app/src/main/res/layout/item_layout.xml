@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="wrap_content"
     android:layout_margin="20dp"
     android:gravity="center">
 
@@ -32,14 +32,16 @@
         android:layout_height="match_parent"
         android:backgroundTint="@color/white"
         android:padding="8dp"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/delete_icon"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:backgroundTint="@color/white"
-        app:srcCompat="@drawable/ic_baseline_delete_24" />
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <CheckBox
         android:id="@+id/item_checkBox"

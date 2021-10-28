@@ -1,8 +1,8 @@
-package com.example.todolist
+package com.example.todolist.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.example.todolist.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
