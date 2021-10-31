@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.R
 import com.example.todolist.adapter.TodoAdapter
@@ -37,6 +39,17 @@ class TodoList_Fragment : Fragment() {
         val todoAdapter = TodoAdapter(todoList,todoViewModel)
 
         taskRecyclerView.adapter = todoAdapter
+        todoViewModel.todoItems.observe(viewLifecycleOwner, Observer {
+            it.let {
+                todoList.clear()
+                todoList.addAll(it)
+                todoAdapter.notifyDataSetChanged()
+            }
+        })
+
+        addFloatingActionButton.setOnClickListener{
+            findNavController().navigate(R.id.action_todoList_Fragment_to_add_Item_Fragment)
+        }
 
     }
 

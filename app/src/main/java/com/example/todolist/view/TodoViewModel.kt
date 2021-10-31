@@ -13,6 +13,8 @@ class TodoViewModel: ViewModel() {
 
     private val todoRepository = TodoRepository.get()
 
+    var todoItems = todoRepository.getItems()
+
 
     fun addItem(title: String,
                  douDate: String,
