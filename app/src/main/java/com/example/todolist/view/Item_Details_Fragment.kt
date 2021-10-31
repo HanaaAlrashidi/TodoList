@@ -9,11 +9,13 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.activityViewModels
 import com.example.todolist.R
+import com.example.todolist.database.ItemModel
 
 
 class Item_Details_Fragment : Fragment() {
 
     private val todoViewModel: TodoViewModel by activityViewModels()
+    private lateinit var selectedItem: ItemModel
 
 
     override fun onCreateView(
@@ -31,6 +33,13 @@ class Item_Details_Fragment : Fragment() {
         val dueDateEditText: EditText = view.findViewById(R.id.Duedate_editText)
         val descriptoinEditText: EditText = view.findViewById(R.id.descrip_editText)
         val editButton:Button = view.findViewById(R.id.edit_button)
+
+        todoViewModel.selectedItemMutableLiveData.observe(viewLifecycleOwner, {
+            it?.let { item ->
+                titleEditText.text = item.title
+
+            }
+        })
 
 
     }

@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.R
 import com.example.todolist.database.ItemModel
@@ -41,7 +42,18 @@ RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
         holder.taskCheckbox.isChecked = toDo.checkBox
         holder.deleteButton.setOnClickListener {
 
+
         }
+
+        holder.itemView.setOnClickListener{
+            viewModel.selectedItemMutableLiveData.postValue(toDo)
+            it.findNavController().navigate(R.id.action_todoList_Fragment_to_item_Details_Fragment)
+        }
+        holder.taskCheckbox.setOnClickListener{
+            toDo.checkBox = holder.taskCheckbox.isChecked
+            viewModel.updateItem(toDo)
+        }
+
 
 
     }

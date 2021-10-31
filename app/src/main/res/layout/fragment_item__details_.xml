@@ -26,7 +26,8 @@
             android:layout_margin="15dp"
             android:ems="10"
             android:hint="TITLE"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/Duedate_editText"
@@ -35,7 +36,8 @@
             android:layout_margin="15dp"
             android:ems="10"
             android:hint="Duedate"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/descrip_editText"
@@ -44,7 +46,8 @@
             android:layout_margin="15dp"
             android:ems="10"
             android:hint="Description"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/edit_button"
