@@ -1,5 +1,6 @@
 package com.example.todolist.view
 
+import android.app.DatePickerDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -35,13 +36,15 @@ class Add_Item_Fragment : Fragment() {
         val dueDatePicker: DatePicker = view.findViewById(R.id.due_date_picker)
         val saveButton: Button = view.findViewById(R.id.save_button)
 
+
         saveButton.setOnClickListener {
             val task = taskEditText.text.toString()
             val description = descriptionEditText.text.toString()
-            val dueDatePicker = dueDatePicker.maxDate.toString()
+            val dueDate = "${dueDatePicker.year}/${dueDatePicker.month+1}/${dueDatePicker.dayOfMonth}"
+
             if (task.isNotEmpty() && description.isNotEmpty()){
 
-                todoViewModel.addItem(task, description, dueDatePicker, false)
+                todoViewModel.addItem(task, description, dueDate, false)
 
                 findNavController().popBackStack()
             }
