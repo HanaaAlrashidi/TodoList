@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.todolist.R
 import com.example.todolist.database.ItemModel
 
@@ -36,10 +37,23 @@ class Item_Details_Fragment : Fragment() {
 
         todoViewModel.selectedItemMutableLiveData.observe(viewLifecycleOwner, {
             it?.let { item ->
-                titleEditText.text = item.title
+                titleEditText.setText(item.title)
+                dueDateEditText.setText(item.douDate)
+                descriptoinEditText.setText(item.description)
+                selectedItem = item
 
             }
         })
+
+        editButton.setOnClickListener{
+            selectedItem.title = titleEditText.text.toString()
+            selectedItem.douDate = dueDateEditText.text.toString()
+            selectedItem.description = descriptoinEditText.text.toString()
+
+            todoViewModel.updateItem(selectedItem)
+
+            findNavController().popBackStack()
+        }
 
 
     }

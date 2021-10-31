@@ -12,10 +12,14 @@
         tools:layout="@layout/fragment_todo_list_" >
         <action
             android:id="@+id/action_todoList_Fragment_to_add_Item_Fragment"
-            app:destination="@id/add_Item_Fragment" />
+            app:destination="@id/add_Item_Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_todoList_Fragment_to_item_Details_Fragment"
-            app:destination="@id/item_Details_Fragment" />
+            app:destination="@id/item_Details_Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/add_Item_Fragment"

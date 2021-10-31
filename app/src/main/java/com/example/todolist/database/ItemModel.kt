@@ -9,10 +9,10 @@ import java.util.*
 
 @Entity
 data class ItemModel (
-    val title: String,
+    var title: String,
     val date: String,
-    val douDate: String,
-    val description:String,
+    var douDate: String,
+    var description:String,
     var checkBox: Boolean,
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0

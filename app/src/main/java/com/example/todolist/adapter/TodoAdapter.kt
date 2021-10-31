@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
@@ -16,11 +17,12 @@ class TodoAdapter(val todoList: List<ItemModel>, val viewModel: TodoViewModel):
 RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
 
+
     class TodoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleTextview: TextView = view.findViewById(R.id.title_textView)
         val dateTextview: TextView = view.findViewById(R.id.date_textview)
         val taskCheckbox: CheckBox = view.findViewById(R.id.checkBox)
-        val deleteButton: Button = view.findViewById(R.id.delete_Button)
+        val deleteButton: ImageButton = view.findViewById(R.id.delete_Button)
 
     }
 
@@ -41,8 +43,7 @@ RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
         holder.dateTextview.text = toDo.date
         holder.taskCheckbox.isChecked = toDo.checkBox
         holder.deleteButton.setOnClickListener {
-
-
+            viewModel.deleteItem(toDo)
         }
 
         holder.itemView.setOnClickListener{
