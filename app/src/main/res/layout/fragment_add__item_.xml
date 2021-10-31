@@ -43,7 +43,7 @@
                 android:padding="20dp" />
 
             <DatePicker
-                android:id="@+id/date_picker"
+                android:id="@+id/due_date_picker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

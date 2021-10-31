@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.todolist.database.ItemModel
 import com.example.todolist.repository.TodoRepository
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
 import java.util.*
 
 class TodoViewModel: ViewModel() {
@@ -14,12 +15,14 @@ class TodoViewModel: ViewModel() {
 
 
     fun addItem(title: String,
-                 date: String,
                  douDate: String,
                  description:String,
                  checkBox: Boolean){
+
+        val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
+        val currentDate = sdf.format(Date())
         viewModelScope.launch {
-            todoRepository.addItem(ItemModel(title,date,douDate,description,checkBox))
+            todoRepository.addItem(ItemModel(title,currentDate,douDate,description,checkBox))
         }
 
         fun updateItem(itemModel: ItemModel){

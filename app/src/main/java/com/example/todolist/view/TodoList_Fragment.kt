@@ -5,9 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.R
+import com.example.todolist.adapter.TodoAdapter
 import com.example.todolist.database.ItemModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -15,6 +16,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class TodoList_Fragment : Fragment() {
 
     private val todoList = mutableListOf<ItemModel>()
+
+    private val todoViewModel: TodoViewModel by activityViewModels()
 
 
     override fun onCreateView(
@@ -31,6 +34,9 @@ class TodoList_Fragment : Fragment() {
         val taskRecyclerView: RecyclerView = view.findViewById(R.id.todo_recyclerview)
         val addFloatingActionButton: FloatingActionButton = view.findViewById(R.id.add_Button)
 
+        val todoAdapter = TodoAdapter(todoList,todoViewModel)
+
+        taskRecyclerView.adapter = todoAdapter
 
     }
 
