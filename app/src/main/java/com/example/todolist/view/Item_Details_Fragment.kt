@@ -1,5 +1,7 @@
 package com.example.todolist.view
 
+import android.app.DatePickerDialog
+import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.todolist.R
 import com.example.todolist.database.ItemModel
+import java.util.*
 
 
 class Item_Details_Fragment : Fragment() {
@@ -53,6 +56,29 @@ class Item_Details_Fragment : Fragment() {
             todoViewModel.updateItem(selectedItem)
 
             findNavController().popBackStack()
+        }
+
+
+        val dateRangePicker = DatePickerDialog(requireActivity())
+        dueDateEditText.setOnClickListener {
+
+            val dateRangePicker = DatePickerDialog(requireActivity())
+            dueDateEditText.setOnClickListener {
+
+                dateRangePicker.show()
+
+            }
+
+            dateRangePicker.setButton(DialogInterface.BUTTON_POSITIVE, "OK") { _, _ ->
+                dueDateEditText.setText(
+                    "${dateRangePicker.datePicker.year}/" +
+                        "${dateRangePicker.datePicker.month+1}/" +
+                        "${dateRangePicker.datePicker.dayOfMonth}")
+            }
+
+
+
+
         }
 
 

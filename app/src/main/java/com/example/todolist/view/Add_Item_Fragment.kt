@@ -44,7 +44,7 @@ class Add_Item_Fragment : Fragment() {
 
             if (task.isNotEmpty() && description.isNotEmpty()){
 
-                todoViewModel.addItem(task, description, dueDate, false)
+                todoViewModel.addItem(task, dueDate, description, false)
 
                 findNavController().popBackStack()
             }

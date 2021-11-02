@@ -26,7 +26,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
-                android:backgroundTint="#B8A8A8"
+                android:background="@drawable/edit"
+                android:backgroundTint="#C3D7DA"
                 android:ems="10"
                 android:hint="ADD YOUR TASK"
                 android:inputType="textPersonName"
@@ -37,7 +38,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
-                android:backgroundTint="#B8A8A8"
+                android:background="@drawable/edit"
+                android:backgroundTint="#C3D7DA"
                 android:ems="10"
                 android:hint="TASK DESCRIPTION"
                 android:inputType="textPersonName"
@@ -61,7 +63,8 @@
                 android:layout_margin="25dp"
                 android:background="#00BCD4"
                 android:text="SAVE"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                app:cornerRadius="15dp"/>
 
         </LinearLayout>
     </ScrollView>

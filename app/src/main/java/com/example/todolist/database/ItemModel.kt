@@ -13,7 +13,7 @@ data class ItemModel (
     val date: String,
     var douDate: String,
     var description:String,
-    var checkBox: Boolean,
+    var checkBox: Boolean = false,
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0
         )
