@@ -7,7 +7,7 @@
 
 2) Link to wireframes and user stories
 #wireframes
-figma link
+figma link https://www.figma.com/file/fvKeeeXvwYHV27AFzvhEG4/Untitled?node-id=0%3A1
 #user stories
 As a user, I want to add the task to my application so that I can remember it later.
 As a user, I want to edit my task each time so that I can make an update to the current task.
@@ -17,7 +17,7 @@ As a user, I want in my application to check if I complete it my task.
 As a user, I want to see in my HomeScreen ( Task, dueDate , completed or uncompleted).
 As a user, I want to see the dueDate under the taskTitle in order to do it on it's time.
 As a user, I want to click on edit button to shows me the task details
-As a user, I want to click on the task to shows mw the task details.
+As a user, I want to click on the task to shows me the task details.
 As a user, I want to If I do the task before the due time , I click on checkbox
 As a user, I want to add "task , due date, task description"
 
@@ -33,6 +33,12 @@ Mr.Saad, medium website.
 
 
 4)List unsolved problems which would be fixed in future iterations.
-
+A- filtering
+B- sorting
+C- notification if the task is completed or uncompleted
+D- using another database not just the local database that we used
 
 5)Describe how some of your favorite functions work
+A- learning "Material Card View" it give the design more
+flexibility to work with and change it's shape, color, stroke.....ets
+B- learning how to use codes from "Material Design website" and put it in my code without errors 
