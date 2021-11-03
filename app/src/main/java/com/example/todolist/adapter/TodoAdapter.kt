@@ -61,10 +61,6 @@ class TodoAdapter(val todoList: List<ItemModel>, val viewModel: TodoViewModel) :
             val deadline = format.parse(toDo.douDate)
 
 
-            Log.d("toDo.douDate", toDo.douDate.toString())
-            Log.d("currentDate", currentDate.toString())
-            Log.d("deadline", deadline.toString())
-
             if (currentDate < deadline) {
                 holder.titleTextview.setPaintFlags(0)
             } else {
