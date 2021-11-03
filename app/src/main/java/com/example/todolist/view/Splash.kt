@@ -13,7 +13,7 @@ class Splash : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        // set time for splash
+        // set tim5=e for splash
         val intent= Intent(this,MainActivity::class.java)
         object : CountDownTimer(2000,1000){
             override fun onTick(p0: Long) {
