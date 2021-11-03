@@ -9,7 +9,7 @@
 
 # Link to wireframes and user stories
 # wireframes
-figma link [figma] (https://www.figma.com/file/fvKeeeXvwYHV27AFzvhEG4/Untitled?node-id=9%3A190)
+figma link [figma](https://www.figma.com/file/fvKeeeXvwYHV27AFzvhEG4/Untitled?node-id=9%3A190)
 ![to](https://github.com/HanaaAlrashidi/TodoList/blob/64ac6e3e2ec80882fa647a74275c199090c512f3/to.png)
 # user stories
  - As a user, I want to add the task to my application so that I can remember it later.
