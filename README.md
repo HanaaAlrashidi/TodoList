@@ -38,3 +38,9 @@ figma link [figma](https://www.figma.com/file/fvKeeeXvwYHV27AFzvhEG4/Untitled?no
 # Describe how some of your favorite functions work
  - learning "Material Card View" it give the design more flexibility to work with and change it's shape, color, stroke.....ets
  - learning how to use codes from "Material Design website" and put it in my code without errors 
+
+![splash](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/splash.png)
+![screen1](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/screen1.png)
+![save screen](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/save%20screen.png)
+![edit screen](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/edit%20screen.png)
+![calender](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/calender.png)
