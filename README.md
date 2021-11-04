@@ -39,9 +39,6 @@ figma link [figma](https://www.figma.com/file/fvKeeeXvwYHV27AFzvhEG4/Untitled?no
  - learning "Material Card View" it give the design more flexibility to work with and change it's shape, color, stroke.....ets
  - learning how to use codes from "Material Design website" and put it in my code without errors 
 
-![splash](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/splash.png)
-![screen1](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/screen1.png)
-![save screen](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/save%20screen.png)
-![edit screen](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/edit%20screen.png)
-![calender](https://github.com/HanaaAlrashidi/TodoList/blob/65fbca42adb1fa2f60c9cb01edf8cb57a2657553/calender.png)
-![screenshot](https://github.com/HanaaAlrashidi/TodoList/blob/4004517e183a75436237d88ebf58b2bec416ff51/Screenshot.png)
+# App result
+
+![hanapic](https://github.com/HanaaAlrashidi/TodoList/blob/27998ef4c6e74d9d2f258972176a56edca63fce2/hanapic.png)
